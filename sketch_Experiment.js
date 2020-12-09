@@ -25,7 +25,7 @@ var titleWidth = 0;
 var novelNumber = 2;
 var novelInfo = [
     ['デューク', '江國香織', 'duke.txt'],
-    ['スイート・ラバーズ', '江國香織', 'natsu.txt']
+    ['スイート・ラバーズ', '江國香織', 'natsu.txt'],
     ['なぞの青年', '星新一', 'mysteriousBoy.txt']
 ];
 
