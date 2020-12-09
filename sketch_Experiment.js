@@ -31,7 +31,7 @@ var novelInfo = [
 
 //BGMの変数
 var bgm;
-var bgmSwitch = 1;　//BGMを再生タイミングに使用する
+var bgmSwitch = 0;　//BGMを再生タイミングに使用する
 
 //小説の文節を格納する配列
 var phrase;
@@ -807,10 +807,10 @@ function draw() {
                         textLeading(fontSize[i]);
 
                         fill(150, opacity[i]);
-                        //text(phrase[i], phraseX[i], phraseY[i], tWidth + 5, (tWidth + 2) * realLetterLengthForVertical[i] + 5);
+                        text(phrase[i], phraseX[i], phraseY[i], tWidth + 5, (tWidth + 2) * realLetterLengthForVertical[i] + 5);
                         
                          //テキストを動かすためのコード
-                        phraseY[i] = phraseY[i] + moveLengthPerFrame;
+                        //phraseY[i] = phraseY[i] + moveLengthPerFrame;
 
                         //句読点のためのコード
                         //。、のとき
