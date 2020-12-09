@@ -22,10 +22,11 @@ var titleXY = 5;
 var autherXY = 5;
 var titleSize = 20;
 var titleWidth = 0;
-var novelNumber = 0;
+var novelNumber = 2;
 var novelInfo = [
     ['デューク', '江國香織', 'duke.txt'],
     ['スイート・ラバーズ', '江國香織', 'natsu.txt']
+    ['なぞの青年', '星新一', 'mysteriousBoy.txt']
 ];
 
 //BGMの変数
@@ -703,7 +704,7 @@ function draw() {
                         textAlign(LEFT, TOP);
 
                         //テキストを動かすためのコード
-                        phraseX[i] = phraseX[i] + moveLengthPerFrame;
+                        //phraseX[i] = phraseX[i] + moveLengthPerFrame;
 
                         //rect(phraseX[i], phraseY[i], tWidth*phrase[i].length + 2, tHeight);
                     }
@@ -806,7 +807,7 @@ function draw() {
                         textLeading(fontSize[i]);
 
                         fill(150, opacity[i]);
-                        text(phrase[i], phraseX[i], phraseY[i], tWidth + 5, (tWidth + 2) * realLetterLengthForVertical[i] + 5);
+                        //text(phrase[i], phraseX[i], phraseY[i], tWidth + 5, (tWidth + 2) * realLetterLengthForVertical[i] + 5);
                         
                          //テキストを動かすためのコード
                         phraseY[i] = phraseY[i] + moveLengthPerFrame;
